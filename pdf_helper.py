@@ -9,6 +9,7 @@ class MyPdf(FPDF):
     def footer(self):
         self.set_y(-15)
         self.set_font('Times', 'I', 8)
+        self.set_text_color(169, 169, 169)
         self.cell(0, 10, self.page_name, 0, 0, "R")
 
     def set_footer(self, page_name):
