@@ -5,9 +5,9 @@ from pdf_helper import MyPdf
 
 def add_line():
     for _ in range(25):
-        pdf.ln()
         pdf.set_font('Times', 'B', 22)
         pdf.cell(0, 10, border="B")
+        pdf.ln()
 
 
 pdf = MyPdf()
